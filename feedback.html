@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обратная связь - Я студент ВШЭ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Обратная связь</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="feedback.html">Обратная связь</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="/serverscript" method="post">
+            <label for="query">Поиск:</label>
+            <input type="search" disabled name="query" placeholder="Введите запрос"><br>
+            
+            <input type="button" value="Test"><br>
+            <input type="submit" value="Отправить"><br>
+
+            <label for="chkAccepted">Вы даете согласие?</label>
+            <input type="checkbox" name="chkAccepted" id="chkAccepted"><br>
+
+            <label for="clr">Выберите цвет:</label>
+            <input type="color" id="clr" name="color"><br>
+
+            <label for="date">Дата:</label>
+            <input type="date" name="date" id="date"><br>
+
+            <label for="datetime-local">Дата и время:</label>
+            <input type="datetime-local" name="datetime-local" id="datetime-local"><br>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email"><br>
+
+            <label for="file">Резюме:</label>
+            <input type="file" name="uplResume" id="file"><br>
+
+            <input type="hidden" name="hdnID" value="123"><br>
+
+            <label for="image">Изображение кнопки:</label>
+            <input type="image" src="https://api.time.com/wp-content/uploads/2019/03/kitten-report.jpg?w=784&quality=85" alt="Submit" width="100" height="100"><br>
+
+            <label for="month">Месяц:</label>
+            <input type="month" name="month" id="month"><br>
+
+            <label for="number">Число:</label>
+            <input type="number" name="number" id="number" max="1000" min="0" step="10"><br>
+
+            <label for="pwd">Пароль:</label>
+            <input type="password" name="pwdSecret" id="pwd"><br>
+
+            <label>Опции:</label>
+            <label for="optA">A</label>
+            <input name="option" id="optA" type="radio" value="1"><br>
+            <label for="optB">B</label>
+            <input name="option" id="optB" type="radio" value="2"><br>
+            <label for="optC">C</label>
+            <input name="option" id="optC" type="radio" value="3"><br>
+
+            <label for="range">Диапазон:</label>
+            <input type="range" name="range" id="range"><br>
+
+            <input type="reset" value="Сбросить"><br>
+
+            <label for="tel">Телефон:</label>
+            <input type="tel" name="tel" id="tel"><br>
+
+            <label for="text">Текст:</label>
+            <input type="text" name="text" id="text"><br>
+
+            <textarea name="textarea" rows="4" cols="50">Текстовое поле</textarea><br>
+
+            <label for="time">Время:</label>
+            <input type="time" name="time" id="time"><br>
+
+            <label for="url">URL:</label>
+            <input type="url" name="url" id="url"><br>
+
+            <label for="week">Неделя:</label>
+            <input type="week" name="week" id="week"><br>
+
+            <label for="slct">Выбор:</label>
+            <select name="slct" id="slct">
+                <optgroup label="numbers">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </optgroup>
+                <optgroup label="letters">
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                </optgroup>
+            </select><br>
+
+            <button type="submit">Искать!</button>
+        </form>
+    </main>
+    <footer>
+        <p>© 2024 Я - студент ВШЭ</p>
+        <address>Контактная информация: <a href="mailto:student@hse.ru">student@hse.ru</a></address>
+    </footer>
+</body>
+</html>
