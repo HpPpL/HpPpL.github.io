@@ -1,0 +1,200 @@
+/* Стили шапки */
+header {
+  background: #ffffff;
+  padding: 1rem 0;
+  border-bottom: 1px solid #eaeaea;
+}
+
+/* Стили навигационного меню */
+nav {
+  background: #f4f4f4;
+  padding: 0.5rem 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Стили тушки свиньи */
+body {
+  background-image: url('../media/images/background_image.jpg'); 
+  background-repeat: repeat; 
+}
+
+/* Стили основного содержания */
+main {
+  background: #fff;
+  padding: 1rem;
+  margin: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Стили для статей и боковой панели */
+article, aside {
+  background: #fff;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Стили для дополнительных секций */
+section {
+  background: #f8f8f8;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* Стили подвала */
+footer {
+  background: #333333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Стили для изображений */
+main img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Стилизация заголовка */
+header h1 {
+  text-align: center;
+  color: #ffffff; 
+  background-color: #333333;
+  padding: 10px 0; 
+  margin-bottom: 20px; 
+}
+
+/* Стили для выпадающего меню */
+nav ul li {
+  position: relative;
+}
+
+nav ul li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f4f4f4;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  min-width: 140px;
+}
+
+nav ul li:hover ul {
+  display: block;
+}
+
+nav ul li ul li {
+  display: block;
+}
+
+nav ul li ul li a {
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+nav ul li ul li a:hover {
+  background-color: #ddd;
+}
+
+/* Стили для навигационных ссылок */
+nav ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #333;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+nav ul li a:hover {
+  background-color: #ddd;
+}
+
+/* Адаптивные медиа запросы для мобильных устройств */
+@media (max-width: 768px) {
+  nav ul li {
+    display: block;
+    margin: 0.5rem 0;
+  }
+  
+  header h1 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Стилизация формы обратной связи */
+
+form {
+  max-width: 600px; /* Ограничиваем максимальную ширину формы */
+  margin: 0 auto; /* Центрирование формы на странице */
+  padding: 1rem;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Общие стили для всех полей ввода */
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="datetime-local"],
+input[type="search"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea,
+select {
+  width: 100%; /* Задаем ширину 100% для всех элементов */
+  padding: 0.5rem;
+  margin-bottom: 1rem; /* Добавляем отступ снизу для каждого элемента */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Стиль для кнопок */
+input[type="submit"],
+input[type="button"],
+input[type="reset"],
+button {
+  width: auto; /* Автоматическая ширина для кнопок */
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Стиль для checkbox и radio buttons для предотвращения растягивания */
+input[type="checkbox"],
+input[type="radio"] {
+  width: auto; /* Отменяем 100% ширину для этих элементов */
+}
+
+/* Стиль для элемента выбора цвета */
+input[type="color"] {
+  width: auto; /* Отменяем 100% ширину для элемента выбора цвета */
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}

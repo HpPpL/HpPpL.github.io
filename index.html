@@ -4,33 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Я - студент ВШЭ</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="media/images/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
         <h1>Я - студент ВШЭ</h1>
         <nav>
-            <ul>
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="feedback.html">Обратная связь</a></li>
-            </ul>
-        </nav>
+			<ul>
+				<li><a href="index.html">Главная</a></li>
+				<li>
+					<a href="projects.html">Мои проекты</a>
+					<ul>
+						<li><a href="#">Подвкладка 1.1</a></li>
+						<li><a href="#">Подвкладка 1.2</a></li>
+					</ul>
+				</li>
+				<li><a href="feedback.html">Обратная связь</a></li>
+			</ul>
+		</nav>
     </header>
     <main>
         <article>
             <h2>Об университете</h2>
             <p><mark>Высшая школа экономики</mark> - ведущий российский университет, где каждый студент может найти глубокие знания по интересующей его специальности.</p>
-            <img src="hse_image.jpg" alt="Здание ВШЭ">
+            <img src="media/images/hse_image.jpg" alt="Здание ВШЭ">
             <p>Мы предлагаем широкий спектр программ и курсов, обеспечиваем высокое качество образования и научных исследований.</p>
             <!-- Видео о ВШЭ -->
             <video controls>
-                <source src="hse_intro.mp4" type="video/mp4" />
+                <source src="media/videos/hse_intro.mp4" type="video/mp4" />
                 Ваш браузер не поддерживает видео тег.
             </video>
             <!-- Аудио приветствие -->
             <audio controls>
-                <source src="hse_welcome.mp3" type="audio/mpeg">
+                <source src="media/audios/hse_welcome.mp3" type="audio/mpeg">
                 Ваш браузер не поддерживает аудио тег.
             </audio>
             <p>Дата создания ВШЭ: <time datetime="1992">1992 год</time>.</p>

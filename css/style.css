@@ -1,0 +1,142 @@
+/* Стили шапки */
+header {
+  background: #ffffff;
+  padding: 1rem 0;
+  border-bottom: 1px solid #eaeaea;
+}
+
+/* Стили навигационного меню */
+nav {
+  background: #f4f4f4;
+  padding: 0.5rem 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Стили для выпадающего меню */
+nav ul li {
+  position: relative;
+}
+
+nav ul li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f4f4f4;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  min-width: 140px;
+}
+
+nav ul li:hover ul {
+  display: block;
+}
+
+nav ul li ul li {
+  display: block;
+}
+
+nav ul li ul li a {
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+nav ul li ul li a:hover {
+  background-color: #ddd;
+}
+
+/* Стили тушки свиньи */
+body {
+  background-image: url('../media/images/background_image.jpg'); 
+  background-repeat: repeat; 
+}
+
+/* Стили основного содержания */
+main {
+  background: #fff;
+  padding: 1rem;
+  margin: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Стили для статей и боковой панели */
+article, aside {
+  background: #fff;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Стили для дополнительных секций */
+section {
+  background: #f8f8f8;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* Стили подвала */
+footer {
+  background: #333333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Стили для изображений */
+main img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Стилизация заголовка */
+header h1 {
+  text-align: center;
+  color: #ffffff; 
+  background-color: #333333;
+  padding: 10px 0; 
+  margin-bottom: 20px; 
+}
+
+/* Стили для навигационных ссылок */
+nav ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #333;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+nav ul li a:hover {
+  background-color: #ddd;
+}
+
+/* Адаптивные медиа запросы для мобильных устройств */
+@media (max-width: 768px) {
+  nav ul li {
+    display: block;
+    margin: 0.5rem 0;
+  }
+  
+  header h1 {
+    font-size: 1.5rem;
+  }
+}
