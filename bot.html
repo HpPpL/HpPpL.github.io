@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Чат-бот - Студент ВШЭ</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bot.css" />
+</head>
+<body>
+    <header>
+        <h1>Чат-бот - Студент ВШЭ</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="projects.html">Мои проекты</a></li>
+            <li><a href="bot.html">Чат-бот</a></li>
+            <li><a href="feedback.html">Обратная связь</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Возможности чат-бота</h2>
+            <p>Чат-бот может стать вашим виртуальным собеседником, помощником и даже развлечь вас. Вот что он умеет (в перспективе..):</p>
+            <ul>
+                <li><strong>"Привет"</strong> - бот приветствует вас и представляется.</li>
+                <li><strong>"Погода"</strong> - бот даст прогноз погоды на сегодня.</li>
+                <li><strong>"Анекдот"</strong> - бот расскажет забавный анекдот или шутку.</li>
+                <li><strong>"Факт"</strong> - бот приведет интересный факт, который может вас удивить.</li>
+                <li><strong>"Совет"</strong> - бот даст полезный совет на день.</li>
+                <li>Отправьте <strong>аудиофайл</strong>, чтобы бот попробовал его распознать и ответить (функционал в разработке).</li>
+				<li><strong>"Помощь"</strong> - получите список команд, которые поддерживает бот.</li>
+				<li><strong>"История"</strong> - бот расскажет интересные исторические анекдоты или факты.</li>
+				<li>Попросите бота <strong>расслабить вас</strong>, и он предложит короткую медитацию или расслабляющую музыку.</li>
+			</ul>
+		</section>
+		<section>
+			<h2>Чат-бот</h2>
+			<div id="chat-container">
+				<div id="chat-messages"></div>
+				<textarea id="message-input" placeholder="Введите ваше сообщение..."></textarea>
+				<input type="file" accept="audio/*" id="audio-input">
+				<label for="audio-input">Загрузить аудио</label>
+				<button id="send-button">Отправить</button>
+			</div>
+		</section>
+	</main>
+	<footer>
+	<p>© 2024 Я - студент ВШЭ</p>
+	<address>Контактная информация: <a href="mailto:student@hse.ru">student@hse.ru</a></address>
+	</footer>
+	<script src="js/bot.js"></script>
+
+</body>
+</html>
