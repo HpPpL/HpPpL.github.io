@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Список обратной связи - Я студент ВШЭ</title>
+  <link rel="stylesheet" href="css/feedback.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <header>
+      <h1>Отзывы</h1>
+      <nav>
+          <ul>
+              <li><a href="index.html">Главная</a></li>
+              <li>
+					<a href="projects.html">Мои проекты</a>
+					<ul>
+						<li><a href="#">Подвкладка 1.1</a></li>
+						<li><a href="#">Подвкладка 1.2</a></li>
+					</ul>
+				</li>
+              <li><a href="bot.html">Чат-бот</a></li>
+              <li><a href="feedback.html">Обратная связь</a></li>
+              <li><a href="feedback-list.html">Список отзывов</a></li>
+          </ul>
+      </nav>
+  </header>
+  <main>
+    <div id="feedback-container"><!-- Сюда будут вставлены данные обратной связи --></div>
+  </main>
+  <footer>
+    <p>© 2024 Я - студент ВШЭ</p>
+    <address>Контактная информация: <a href="mailto:student@hse.ru">student@hse.ru</a></address>
+  </footer>
+
+  <<script>
+  // Элемент для вставки данных обратной связи
+  const feedbackContainer = document.getElementById('feedback-container');
+
+  // Функция для получения и отображения обратной связи
+  function fetchFeedbacks() {
+    fetch('/feedbacks')
+      .then(response => response.json())
+      .then(feedbacks => {
+        feedbacks.forEach((feedback, index) => {
+          const feedbackElement = document.createElement('div');
+          feedbackElement.classList.add('feedback-entry');
+          feedbackElement.innerHTML = `
+            <h3>Отзыв #${index + 1}</h3>
+            <p><strong>Email:</strong> ${feedback.email}</p>
+            <p><strong>Текст отзыва:</strong> ${feedback.text}</p>
+            <p><strong>Дата:</strong> ${feedback.date ? new Date(feedback.date).toLocaleString() : 'Не указана'}</p>
+            ${feedback.color ? `<p><strong>Цвет:</strong> <span style="background-color:${feedback.color};">${feedback.color}</span></p>` : ''}
+			<p><strong>URL:</strong> ${feedback.url}</p>
+			<p><strong>Телефон:</strong> ${feedback.tel}</p>
+            ${feedback.chkAccepted ? `<p>Пользователь дал согласие.</p>` : `<p>Пользователь не дал согласия.</p>`}
+            <hr>
+          `;
+          feedbackContainer.appendChild(feedbackElement);
+        });
+      })
+      .catch(error => console.error('Ошибка:', error));
+  }
+
+  // Вызов функции при загрузке страницы
+  fetchFeedbacks();
+</script>
+
+
+</body>
+</html>

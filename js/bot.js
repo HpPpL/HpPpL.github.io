@@ -91,7 +91,7 @@ window.onload = function() {
 
             let botResponse = getCustomResponse(message);
             let botResponseDiv = prepareBotAnswer();
-            botResponseDiv.textContent = 'Бот Антон: ' + botResponse;
+            botResponseDiv.textContent = 'Бот ВШЭ: ' + botResponse;
             chatMessages.appendChild(botResponseDiv);
         }
 
